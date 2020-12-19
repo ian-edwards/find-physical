@@ -1,11 +1,12 @@
 {
     "name": "Find Physical Games",
     "version": "1.0",
-    "manifest_version": 2,
     "browser_action": {
         "name": "Click to find physical games"
     },
-    "background":{
-        "scripts":["background/background.js"]
-    }
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+    "manifest_version": 2
 }
