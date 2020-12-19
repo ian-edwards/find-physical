@@ -1,6 +1,9 @@
 const sendMessageId = document.getElementById("sendmessageid");
 if (sendMessageId) {
     sendMessageId.onclick = function() {
+        var name = window.prompt("Enter your name: ");
+        var searchStringId = document.getElementById('searchstringid').textContent;
+        alert(searchStringId)
         window.open("https://www.w3schools.com");
         // chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
         //     chrome.tabs.sendMessage(

@@ -15,10 +15,19 @@
             }
         </style>
     </head>
-    <body>
-        <h1>Show the NASA picture of the day</h1>
-        <input name="mySingleLineTextField" type="text" />
+    <body onshow="loadImage()">
+        <h1>Search for phyiscal games</h1>
+        <input id="searchstringid" type="text" />
+        <br/>
+        <br/>
         <button id="sendmessageid">Search</button>
         <script src="popup.js"></script>
     </body>
+
+    <script>
+        function loadImage() {
+            var name = window.prompt("Enter your name: ");
+            alert("Image is loaded");
+        }
+    </script>
 </html>

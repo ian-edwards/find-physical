@@ -22,5 +22,9 @@
     ],
     "web_accessible_resources": [
         "images/*.jpeg"
-    ]
+    ],
+    "background":{
+        "scripts":["background/background.js"],
+        "persistent":false
+    }
 }
