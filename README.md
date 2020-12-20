@@ -1,8 +1,8 @@
 # Find Physical Games
 
-Find Physical Games is a Chromium extension for searching online to buy physical games
+Find Physical Games is a simple Chromium extension for searching online to buy physical games
 
-It forwards the search term to each retailer's website and opens each result in a new tab
+It forwards a search term to a number of game retailer's websites and opens each result in a new tab
 
 Currently this extension is for UK retailers
 
@@ -10,9 +10,7 @@ Currently this extension is for UK retailers
 
 Standard Chromium package installation via web store
 
-
 OR
-
 
 Enable Chromium extension developer mode
 

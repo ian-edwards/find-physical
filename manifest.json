@@ -2,6 +2,7 @@
     "name": "Find Physical Games",
     "author": "Ian Edwards <https://github.com/ian-edwards>",
     "version": "1",
+    "description": "Hello World",
     "browser_action": {
         "name": "Click to find physical games"
     },
