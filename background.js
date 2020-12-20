@@ -6,7 +6,7 @@
  */
 chrome.browserAction.onClicked.addListener(function(activeTab){
     const search = window.prompt("Enter search text:");
-    if (search != null) { // cancelled
+    if (search != null) { // not cancelled
       const searchPlus = search.replace(" ", "+");
       chrome.tabs.create({ url: `https://www.amazon.co.uk/s?k=${searchPlus}` });
       chrome.tabs.create({ url: `https://www.base.com/fsearch.htm?search=${searchPlus}` });
