@@ -1,6 +1,7 @@
 {
     "name": "Find Physical Games",
-    "version": "1.0",
+    "author": "Ian Edwards <https://github.com/ian-edwards>",
+    "version": "1",
     "browser_action": {
         "name": "Click to find physical games"
     },
