@@ -28,7 +28,6 @@ chrome.browserAction.onClicked.addListener(function(activeTab){
 
       const searchSpace = search.replace(" ", "%20");
       chrome.tabs.create({ url: `https://ao.com/l/search/101/99/?search=${searchSpace}` });
-      chrome.tabs.create({ url: `https://groceries.asda.com/search/${searchSpace}` });
       chrome.tabs.create({ url: `https://www.coolshop.co.uk/s/?q=${searchSpace}` });
       chrome.tabs.create({ url: `https://itemdrop.co.uk/index.php?route=product/search&search=${searchSpace}` });
       chrome.tabs.create({ url: `https://www.shopto.net/en/search/?input_search=${searchSpace}` });
