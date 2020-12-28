@@ -16,6 +16,7 @@ chrome.browserAction.onClicked.addListener(function(activeTab){
       chrome.tabs.create({ url: `https://www.game.co.uk/webapp/wcs/stores/servlet/AjaxCatalogSearch?storeId=10151&searchTerm=${searchPlus}` });
       chrome.tabs.create({ url: `https://www.gamingnerds.co.uk/search?sSearch=${searchPlus}` });
       chrome.tabs.create({ url: `https://www.go2games.com/catalogsearch/result/?q=${searchPlus}` });
+      chrome.tabs.create({ url: `https://store.nisaeurope.com/search?q=${searchPlus}` });
       chrome.tabs.create({ url: `https://offergames.co.uk/search?q=${searchPlus}` });
       chrome.tabs.create({ url: `https://www.shop4world.com/search/${searchPlus}` });
       chrome.tabs.create({ url: `https://www.simplygames.com/search?keywords=${searchPlus}` });
@@ -31,6 +32,7 @@ chrome.browserAction.onClicked.addListener(function(activeTab){
       chrome.tabs.create({ url: `https://www.coolshop.co.uk/s/?q=${searchSpace}` });
       chrome.tabs.create({ url: `https://itemdrop.co.uk/index.php?route=product/search&search=${searchSpace}` });
       chrome.tabs.create({ url: `https://www.shopto.net/en/search/?input_search=${searchSpace}` });
+      chrome.tabs.create({ url: `https://store.eu.square-enix-games.com/en_GB/search/${searchSpace}` });
       chrome.tabs.create({ url: `https://www.thegamecollection.net/#sqr:(q[${searchSpace}])` });
       chrome.tabs.create({ url: `https://uk.webuy.com/search?stext=${searchSpace}` }); // CEX
     }
