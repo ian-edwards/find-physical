@@ -17,6 +17,7 @@ chrome.browserAction.onClicked.addListener(function(activeTab){
       chrome.tabs.create({ url: `https://www.gamingnerds.co.uk/search?sSearch=${searchPlus}` });
       chrome.tabs.create({ url: `https://www.geekstore.com/search?q=${searchPlus}` });
       chrome.tabs.create({ url: `https://www.go2games.com/catalogsearch/result/?q=${searchPlus}` });
+      chrome.tabs.create({ url: `https://store.iffyseurope.com/search?q=${searchPlus}` });
       chrome.tabs.create({ url: `https://store.nisaeurope.com/search?q=${searchPlus}` });
       chrome.tabs.create({ url: `https://offergames.co.uk/search?q=${searchPlus}` });
       chrome.tabs.create({ url: `https://www.rarewaves.com/search?q=${searchPlus}` });
