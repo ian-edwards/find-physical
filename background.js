@@ -6,7 +6,7 @@
  */
 chrome.browserAction.onClicked.addListener(function(activeTab){
     const search = window.prompt("Enter search text:");
-    if (search != null) { // not cancelled
+    if (search != null) {
       const searchPlus = search.replace(" ", "+");
       chrome.tabs.create({ url: `https://www.amazon.co.uk/s?k=${searchPlus}` });
       chrome.tabs.create({ url: `https://www.base.com/fsearch.htm?search=${searchPlus}` });
@@ -14,8 +14,7 @@ chrome.browserAction.onClicked.addListener(function(activeTab){
       chrome.tabs.create({ url: `https://www.currys.co.uk/gbuk/search-keywords/xx_xx_xx_xx_xx/${searchPlus}/xx-criteria.html` });
       chrome.tabs.create({ url: `https://www.ebay.co.uk/sch/i.html?_nkw=${searchPlus}` });
       chrome.tabs.create({ url: `https://www.game.co.uk/webapp/wcs/stores/servlet/AjaxCatalogSearch?storeId=10151&searchTerm=${searchPlus}` });
-      chrome.tabs.create({ url: `https://www.gamingnerds.co.uk/search?sSearch=${searchPlus}` });
-      chrome.tabs.create({ url: `https://www.geekstore.com/search?q=${searchPlus}` });
+      chrome.tabs.create({ url: `https://www.gamingnerds.co.uk/index.php/catalogsearch/result/?q=${searchPlus}` });
       chrome.tabs.create({ url: `https://www.go2games.com/catalogsearch/result/?q=${searchPlus}` });
       chrome.tabs.create({ url: `https://store.iffyseurope.com/search?q=${searchPlus}` });
       chrome.tabs.create({ url: `https://store.nisaeurope.com/search?q=${searchPlus}` });
