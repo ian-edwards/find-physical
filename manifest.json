@@ -1,7 +1,7 @@
 {
     "name": "Find Physical Games",
     "author": "Ian Edwards <https://github.com/ian-edwards>",
-    "version": "0.0.0.4",
+    "version": "0.0.0.5",
     "description": "Find physical games at a hand-picked selection UK retailers with one click!",
     "browser_action": {
         "name": "Click to find physical games"
