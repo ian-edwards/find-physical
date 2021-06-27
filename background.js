@@ -6,7 +6,8 @@
  */
 chrome.browserAction.onClicked.addListener(function(activeTab){
     const search = window.prompt("Enter search text:");
-    if (search != null) {
+    const searchCancelled = search == null;
+    if (!searchCancelled) {
       const searchPlus = search.replace(" ", "+");
       chrome.tabs.create({ url: `https://www.amazon.co.uk/s?k=${searchPlus}` });
       chrome.tabs.create({ url: `https://www.base.com/fsearch.htm?search=${searchPlus}` });
@@ -24,6 +25,8 @@ chrome.browserAction.onClicked.addListener(function(activeTab){
       chrome.tabs.create({ url: `https://www.simplygames.com/search?keywords=${searchPlus}` });
       chrome.tabs.create({ url: `https://www.smythstoys.com/uk/en-gb/search/?text=${searchPlus}` });
       chrome.tabs.create({ url: `https://www.thegamery.co.uk/catalogsearch/result/?q=${searchPlus}` });
+      chrome.tabs.create({ url: `https://www.monster-shop.co.uk/?s=${searchPlus}&post_type=product&type_aws=true` });
+      chrome.tabs.create({ url: `https://thechelseagamer.com/pages/search-results-page?q=${searchPlus}` });
 
       const searchMinus = search.replace(" ", "-");
       chrome.tabs.create({ url: `https://www.argos.co.uk/search/${searchMinus}/` });
@@ -38,5 +41,6 @@ chrome.browserAction.onClicked.addListener(function(activeTab){
       chrome.tabs.create({ url: `https://store.eu.square-enix-games.com/en_GB/search/${searchSpace}` });
       chrome.tabs.create({ url: `https://www.thegamecollection.net/#sqr:(q[${searchSpace}])` });
       chrome.tabs.create({ url: `https://uk.webuy.com/search?stext=${searchSpace}` }); // CEX
+      chrome.tabs.create({ url: `https://itemdrop.co.uk/index.php?route=product/search&search=${searchSpace}` });
     }
   });
